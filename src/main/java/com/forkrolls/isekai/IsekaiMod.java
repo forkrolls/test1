@@ -2,6 +2,8 @@ package com.forkrolls.isekai;
 
 
 import com.mojang.logging.LogUtils;
+import com.forkrolls.isekai.item.ModCreativeModeTabs;
+import com.forkrolls.isekai.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -15,20 +17,36 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(Isekai.MOD_ID)
-public class Isekai {
+@Mod(IsekaiMod.MOD_ID)
+public class IsekaiMod {
     public static final String MOD_ID = "isekai";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public Isekai() {
+    public IsekaiMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
 
     }
+
     private void commonSetup(final FMLCommonSetupEvent event) {
+
+    }
+
+    private void addCreative(CreativeModeTabEvent.BuildContents event){
+        if(event.getTab() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.URANIUM);
+            event.accept(ModItems.RAW_URANIUM);
+        }
+
+        if(event.getTab() == ModCreativeModeTabs.MAGIC_TAB){
+            event.accept(ModItems.URANIUM);
+            event.accept(ModItems.RAW_URANIUM);
+        }
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
