@@ -1,6 +1,7 @@
 package com.forkrolls.isekaimod.block;
 
 import com.forkrolls.isekaimod.IsekaiMod;
+import com.forkrolls.isekaimod.block.custom.InterminableInterdimensionalCouloir;
 import com.forkrolls.isekaimod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -35,6 +36,10 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(10,20)));
     public static final RegistryObject<Block> ENDSTONE_AMONG_US_ORE = registerBlock("endstone_among_us_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(10,20)));
+
+    public static final RegistryObject<Block> INTERMINABLE_INTERDIMENSIONAL_COULOIR = registerBlock("interminable_interdimensional_couloir",
+            () -> new InterminableInterdimensionalCouloir(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(10,20)));
 
 
