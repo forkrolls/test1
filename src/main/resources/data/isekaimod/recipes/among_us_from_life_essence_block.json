@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "isekaimod:life_essence_block"
+    }
+
+  ],
+  "result": {
+    "item": "isekaimod:among_us_ore",
+    "count": 9
+  }
+}

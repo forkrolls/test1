@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "isekaimod:life_essence_block",
+    "isekaimod:among_us_ore",
+    "isekaimod:deepslate_among_us_ore",
+    "isekaimod:netherrack_among_us_ore",
+    "isekaimod:endstone_among_us_ore"
+  ]
+}

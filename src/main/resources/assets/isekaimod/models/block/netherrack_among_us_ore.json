@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "isekaimod:block/netherrack_among_us_ore"
+  }
+}
