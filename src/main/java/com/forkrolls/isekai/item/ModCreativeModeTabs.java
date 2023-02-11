@@ -1,6 +1,7 @@
 package com.forkrolls.isekai.item;
 
 import com.forkrolls.isekai.IsekaiMod;
+import com.forkrolls.isekai.block.ModBlocks;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,7 +21,7 @@ public class ModCreativeModeTabs {
                 builder -> builder.icon(() -> new ItemStack(ModItems.RAW_URANIUM.get()))
                         .title(Component.translatable("creativemodetab.magic_tab")));
         SCIENCE_TAB = event.registerCreativeModeTab(new ResourceLocation(IsekaiMod.MOD_ID, "science_tab"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.URANIUM.get()))
+                builder -> builder.icon(() -> new ItemStack(ModBlocks.AMONG_US_ORE.get()))
                         .title(Component.translatable("creativemodetab.science_tab")));
     }
 }

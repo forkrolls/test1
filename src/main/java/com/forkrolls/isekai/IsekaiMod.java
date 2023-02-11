@@ -1,6 +1,7 @@
 package com.forkrolls.isekai;
 
 
+import com.forkrolls.isekai.block.ModBlocks;
 import com.mojang.logging.LogUtils;
 import com.forkrolls.isekai.item.ModCreativeModeTabs;
 import com.forkrolls.isekai.item.ModItems;
@@ -26,11 +27,13 @@ public class IsekaiMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
 
+        modEventBus.addListener(this::addCreative);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -43,9 +46,17 @@ public class IsekaiMod {
             event.accept(ModItems.RAW_URANIUM);
         }
 
-        if(event.getTab() == ModCreativeModeTabs.MAGIC_TAB){
+        if(event.getTab() == ModCreativeModeTabs.SCIENCE_TAB){
             event.accept(ModItems.URANIUM);
             event.accept(ModItems.RAW_URANIUM);
+        }
+
+        if(event.getTab() == ModCreativeModeTabs.MAGIC_TAB){
+            event.accept(ModBlocks.LIFE_ESSENCE_BLOCK);
+            event.accept(ModBlocks.AMONG_US_ORE);
+            event.accept(ModBlocks.DEEPSLATE_AMONG_US_ORE);
+            event.accept(ModBlocks.NETHERRACK_AMONG_US_ORE);
+            event.accept(ModBlocks.ENDSTONE_AMONG_US_ORE);
         }
     }
 
