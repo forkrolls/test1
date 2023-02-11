@@ -48,6 +48,7 @@ public class IsekaiMod {
         if(event.getTab() == ModCreativeModeTabs.SCIENCE_TAB){
             event.accept(ModItems.URANIUM);
             event.accept(ModItems.RAW_URANIUM);
+            event.accept(ModItems.DICE);
         }
 
         if(event.getTab() == ModCreativeModeTabs.MAGIC_TAB){
