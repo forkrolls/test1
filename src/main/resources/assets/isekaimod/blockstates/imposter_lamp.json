@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": {"model": "isekaimod:block/imposter_lamp_on"},
+    "lit=false": {"model": "isekaimod:block/imposter_lamp_off"}
+  }
+}

@@ -1,6 +1,7 @@
 package com.forkrolls.isekaimod.block;
 
 import com.forkrolls.isekaimod.IsekaiMod;
+import com.forkrolls.isekaimod.block.custom.ImposterLampBlock;
 import com.forkrolls.isekaimod.block.custom.InterminableInterdimensionalCouloir;
 import com.forkrolls.isekaimod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -41,6 +42,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> INTERMINABLE_INTERDIMENSIONAL_COULOIR = registerBlock("interminable_interdimensional_couloir",
             () -> new InterminableInterdimensionalCouloir(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(10,20)));
+    public static final RegistryObject<Block> IMPOSTER_LAMP = registerBlock("imposter_lamp",
+            () -> new ImposterLampBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(ImposterLampBlock.LIT) ? 15 : 0), UniformInt.of(10,20)));
 
 
 

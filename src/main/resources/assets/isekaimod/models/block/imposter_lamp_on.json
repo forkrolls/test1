@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "isekaimod:block/imposter_lamp_on"
+  }
+}

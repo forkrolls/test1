@@ -50,6 +50,7 @@ public class IsekaiMod {
             event.accept(ModItems.RAW_URANIUM);
             event.accept(ModItems.DICE);
             event.accept(ModBlocks.INTERMINABLE_INTERDIMENSIONAL_COULOIR);
+            event.accept(ModBlocks.IMPOSTER_LAMP);
         }
 
         if(event.getTab() == ModCreativeModeTabs.MAGIC_TAB){
