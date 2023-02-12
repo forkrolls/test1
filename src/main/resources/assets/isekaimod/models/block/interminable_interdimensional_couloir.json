@@ -1,47 +1,6 @@
-{   "parent": "isekaimod:block/block",
-    "ambientocclusion": false,
+{
+    "parent": "minecraft:block/cube_all",
     "textures": {
-        "particle": "isekaimod:block/interminable_interdimensional_couloir",
-        "glass": "minecraft:block/glass",
-        "leb": "isekaimod:block/life_essence_block",
-        "iic": "isekaimod:block/interminable_interdimensional_couloir"
-    },
-    "elements": [
-        {   "__comment": "Glass shell",
-            "from": [ 0, 0, 0 ],
-            "to": [ 16, 16, 16 ],
-            "faces": {
-                "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
-                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
-                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
-                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
-                "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
-                "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" }
-            }
-        },
-        {   "__comment": "life_essence_block base",
-            "from": [ 2, 0.1, 2 ],
-            "to": [ 14, 3, 14 ],
-            "faces": {
-                "down":  { "uv": [ 2,  2, 14, 14 ], "texture": "#leb" },
-                "up":    { "uv": [ 2,  2, 14, 14 ], "texture": "#leb" },
-                "north": { "uv": [ 2, 13, 14, 16 ], "texture": "#leb" },
-                "south": { "uv": [ 2, 13, 14, 16 ], "texture": "#leb" },
-                "west":  { "uv": [ 2, 13, 14, 16 ], "texture": "#leb" },
-                "east":  { "uv": [ 2, 13, 14, 16 ], "texture": "#leb" }
-            }
-        },
-        {   "__comment": "Inner interminable_interdimensional_couloir texture",
-            "from": [ 3, 3, 3 ],
-            "to": [ 13, 14, 13 ],
-            "faces": {
-                "down":  { "uv": [ 3, 3, 13, 13 ], "texture": "#iic" },
-                "up":    { "uv": [ 3, 3, 13, 13 ], "texture": "#iic" },
-                "north": { "uv": [ 3, 2, 13, 13 ], "texture": "#iic" },
-                "south": { "uv": [ 3, 2, 13, 13 ], "texture": "#iic" },
-                "west":  { "uv": [ 3, 2, 13, 13 ], "texture": "#iic" },
-                "east":  { "uv": [ 3, 2, 13, 13 ], "texture": "#iic" }
-            }
-        }
-    ]
+        "all": "isekaimod:block/interminable_interdimensional_couloir"
+    }
 }
