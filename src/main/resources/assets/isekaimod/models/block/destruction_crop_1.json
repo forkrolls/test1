@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "isekaimod:destruction_crop_1"
+  }
+}

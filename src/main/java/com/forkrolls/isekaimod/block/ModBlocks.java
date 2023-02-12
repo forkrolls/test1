@@ -1,6 +1,7 @@
 package com.forkrolls.isekaimod.block;
 
 import com.forkrolls.isekaimod.IsekaiMod;
+import com.forkrolls.isekaimod.block.custom.DestructionCropBlock;
 import com.forkrolls.isekaimod.block.custom.ImposterLampBlock;
 import com.forkrolls.isekaimod.block.custom.InterminableInterdimensionalCouloir;
 import com.forkrolls.isekaimod.item.ModItems;
@@ -8,6 +9,7 @@ import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -46,6 +48,9 @@ public class ModBlocks {
             () -> new ImposterLampBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(ImposterLampBlock.LIT) ? 15 : 0), UniformInt.of(10,20)));
+    public static final RegistryObject<Block> DESTRUCTION_CROP = BLOCKS.register("destruction_crop",
+            () -> new DestructionCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)
+                    .strength(6f), UniformInt.of(10,20)));
 
 
 

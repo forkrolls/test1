@@ -4,6 +4,8 @@ import com.forkrolls.isekaimod.block.ModBlocks;
 import com.mojang.logging.LogUtils;
 import com.forkrolls.isekaimod.item.ModCreativeModeTabs;
 import com.forkrolls.isekaimod.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -54,6 +56,8 @@ public class IsekaiMod {
         }
 
         if(event.getTab() == ModCreativeModeTabs.MAGIC_TAB){
+            event.accept(ModItems.DESTRUCTION_SEEDS);
+            event.accept(ModItems.DESTRUCTION_FRUIT);
             event.accept(ModBlocks.LIFE_ESSENCE_BLOCK);
             event.accept(ModBlocks.AMONG_US_ORE);
             event.accept(ModBlocks.DEEPSLATE_AMONG_US_ORE);

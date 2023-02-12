@@ -2,6 +2,8 @@
   "item.isekaimod.uranium": "Uranium",
   "item.isekaimod.raw_uranium": "Raw Uranium",
   "item.isekaimod.dice": "Unbound Phantasm",
+  "item.isekaimod.destruction_seeds": "Seeds of Destruction",
+  "item.isekaimod.destruction_fruit": "Fruit of Destruction",
 
   "block.isekaimod.life_essence_block": "Compressed Life Essence",
   "block.isekaimod.among_us_ore": "SUSSY BLOCKA",
@@ -11,6 +13,7 @@
 
   "block.isekaimod.interminable_interdimensional_couloir": "Tite",
   "block.isekaimod.imposter_lamp": "AAAAAAAAAAAA name name name",
+  "block.isekaimod.destruction_crop": "Crop of Destruction",
 
   "creativemodetab.magic_tab": "Magic Tab",
   "creativemodetab.science_tab": "Science Tab"

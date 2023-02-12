@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "age=0": {"model": "isekaimod:block/destruction_crop_0"},
+    "age=1": {"model": "isekaimod:block/destruction_crop_1"},
+    "age=2": {"model": "isekaimod:block/destruction_crop_2"},
+    "age=3": {"model": "isekaimod:block/destruction_crop_3"},
+    "age=4": {"model": "isekaimod:block/destruction_crop_4"}
+  }
+}
